@@ -3,7 +3,7 @@ from colorama import Fore
 import time
 import git
 from git import RemoteProgress
-import exchanges
+#import exchanges
 
 print(Fore.BLUE + "\n\n ██╗      █████╗ ███████╗██╗   ██╗███████╗ ██████╗ ██╗   ██╗██████╗  ██████╗███████╗")
 print(Fore.BLUE + " ██║     ██╔══██╗╚══███╔╝╚██╗ ██╔╝██╔════╝██╔═══██╗██║   ██║██╔══██╗██╔════╝██╔════╝")
@@ -46,7 +46,8 @@ elif text == "5":
     # Uniscan
     print("Uniscan")
 elif text == "6":
-    exchanges.bitfinex.get_current_price()
+    print("Bitcoin")
+    #exchanges.bitfinex.get_current_price()
 else:
     raise SystemExit
 
