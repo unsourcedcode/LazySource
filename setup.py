@@ -6,5 +6,5 @@ setup(
    description='Tool',
    author='Vaxure',
    author_email='vaxure@protonmail.com',
-   install_requires=['git', 'colorama', 'exchanges'], #external packages as dependencies
+   install_requires=['gitpython', 'colorama', 'exchanges'], #external packages as dependencies
 )
