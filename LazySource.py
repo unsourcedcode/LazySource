@@ -26,7 +26,7 @@ text = raw_input(Fore.WHITE + " LazySource > ")
 if text == "00":
     dire = os.getcwd()
     os.system('rm -r ' + dire)
-    git.Repo.clone_from('https://github.com/Vaxure1337/LazySource', '/home')
+    git.Repo.clone_from('https://github.com/Vaxure1337/LazySource', '/home/')
     print("The file has been installed in the folder home")
 elif text == "1":
     # Sqlmap
