@@ -23,11 +23,7 @@ print(" 00) Update")
 
 text = raw_input(Fore.WHITE + " LazySource > ")
 if text == "00":
-    class CustomProgress(RemoteProgress):
-        def update(self, op_code, cur_count, max_count=None, message=''):
-            if message:
-                print(message)
-    git.Repo.clone_from('https://github.com/Vaxure1337/LazySource', '/', branch='master', progress=CloneProgress())
+    git.Repo.clone_from('https://github.com/Vaxure1337/LazySource', '/')
 elif text == "1":
     # Sqlmap
     print("Sqlmap")
