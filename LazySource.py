@@ -23,7 +23,7 @@ print(" 00) Update")
 
 text = raw_input(Fore.WHITE + " LazySource > ")
 if text == "00":
-    git.Repo.clone_from('https://github.com/Vaxure1337/LazySource', '/')
+    git.Repo.clone_from('https://github.com/Vaxure1337/LazySource', 'LazySource')
 elif text == "1":
     # Sqlmap
     print("Sqlmap")
