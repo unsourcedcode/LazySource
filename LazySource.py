@@ -19,27 +19,15 @@ print(" 6) Bitcoin Price")
 text = input(Fore.WHITE + " LazySource > ")
 if text == "2":
     # Sqlmap
-else:
-    raise SystemExit
 if text == "2":
     # JSql
-else:
-    raise SystemExit
 if text == "3":
     # BBQSQL
-else:
-    raise SystemExit
 if text == "4":
     # Nmap
-else:
-    raise SystemExit
 if text == "5":
     # Uniscan
-else:
-    raise SystemExit
 if text == "6":
     bitfinex.get_current_price()
-else:
-    raise SystemExit
 
 
