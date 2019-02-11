@@ -21,7 +21,7 @@ print(" 5) Uniscan")
 print(" 6) Bitcoin Price")
 print(" 00) Update")
 
-text = input(Fore.WHITE + " LazySource > ")
+text = raw_input(Fore.WHITE + " LazySource > ")
 if text == "00":
     class CustomProgress(RemoteProgress):
         def update(self, op_code, cur_count, max_count=None, message=''):
