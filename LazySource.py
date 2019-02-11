@@ -1,5 +1,6 @@
 # coding: utf-8
 from colorama import Fore
+import exchanges
 
 print(Fore.BLUE + "\n\n ██╗      █████╗ ███████╗██╗   ██╗███████╗ ██████╗ ██╗   ██╗██████╗  ██████╗███████╗")
 print(Fore.BLUE + " ██║     ██╔══██╗╚══███╔╝╚██╗ ██╔╝██╔════╝██╔═══██╗██║   ██║██╔══██╗██╔════╝██╔════╝")
@@ -17,17 +18,24 @@ print(" 5) Uniscan")
 print(" 6) Bitcoin Price")
 
 text = input(Fore.WHITE + " LazySource > ")
-if text == "2":
+if text == "1":
     # Sqlmap
-if text == "2":
+    print("Sqlmap")
+elif text == "2":
     # JSql
+    print("JSql")
 if text == "3":
     # BBQSQL
-if text == "4":
+    print("BBQSQL")
+elif text == "4":
     # Nmap
-if text == "5":
+    print("Nmap")
+elif text == "5":
     # Uniscan
-if text == "6":
-    bitfinex.get_current_price()
+    print("Uniscan")
+elif text == "6":
+    exchanges.bitfinex.get_current_price()
+else:
+    raise SystemExit
 
 
