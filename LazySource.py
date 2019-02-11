@@ -1,6 +1,7 @@
 # coding: utf-8
 from colorama import Fore
 import time
+import os
 import git
 from git import RemoteProgress
 #import exchanges
@@ -23,7 +24,9 @@ print(" 00) Update")
 
 text = raw_input(Fore.WHITE + " LazySource > ")
 if text == "00":
-    git.Repo.clone_from('https://github.com/Vaxure1337/LazySource', 'LazySource')
+    dire = os.getcwd()
+    os.system('rm -r ' + dire)
+    git.Repo.clone_from('https://github.com/Vaxure1337/LazySource', dire)
 elif text == "1":
     # Sqlmap
     print("Sqlmap")
