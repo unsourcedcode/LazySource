@@ -53,20 +53,15 @@ if text == "00":
     git.Repo.clone_from('https://github.com/Vaxure1337/LazySource', filepath)
     print("The file has been installed in the folder home")
 elif text == "1":
-    # Sqlmap
-    print("Sqlmap")
+    os.system("sqlmap")
 elif text == "2":
-    # JSql
-    print("JSql")
+    os.system("jsql")
 if text == "3":
-    # BBQSQL
-    print("BBQSQL")
+    os.system("bbqsql")
 elif text == "4":
-    # Nmap
-    print("Nmap")
+    os.system("nmap")
 elif text == "5":
-    # Uniscan
-    print("Uniscan")
+    os.system("uniscan")
 elif text == "6":
     print("Bitcoin")
     #exchanges.bitfinex.get_current_price()
