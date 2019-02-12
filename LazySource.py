@@ -2,6 +2,7 @@
 from colorama import Fore
 import time
 import os
+import shutil
 from pathlib import Path
 import git
 #import exchanges
@@ -25,7 +26,10 @@ print(" 00) Update")
 text = raw_input(Fore.WHITE + " LazySource > ")
 if text == "00":
     #os.system('rm -r ' + os.getcwd())
-    git.Repo.clone_from('https://github.com/Vaxure1337/LazySource', '/home/')
+    #os.system('rm -r /home/LazySource')
+    folder = os.getcwd()
+    shutil.rmtree(folder)
+    git.Repo.clone_from('https://github.com/Vaxure1337/LazySource', folder)
     print("The file has been installed in the folder home")
 elif text == "1":
     # Sqlmap
