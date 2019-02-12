@@ -8,6 +8,25 @@ from pathlib import Path
 import git
 #import exchanges
 
+def install():
+    os.system("sudo apt-get update")
+    os.system("sudo apt-get upgrade")
+    print("Installing Sqlmap")
+    os.system("sudo apt install sqlmap")
+    print("Installing jsql")
+    os.system("sudo apt install jsql")
+    print("Installing bbqsql")
+    os.system("sudo apt install bbqsql")
+    print("Installing nmap")
+    os.system("sudo apt install nmap")
+    print("Installing uniscan")
+    os.system("sudo apt install uniscan")
+
+def startup():
+    os.system("python setup.py")
+    install()
+
+startup()
 print(Fore.BLUE + "\n\n ██╗      █████╗ ███████╗██╗   ██╗███████╗ ██████╗ ██╗   ██╗██████╗  ██████╗███████╗")
 print(Fore.BLUE + " ██║     ██╔══██╗╚══███╔╝╚██╗ ██╔╝██╔════╝██╔═══██╗██║   ██║██╔══██╗██╔════╝██╔════╝")
 print(Fore.WHITE + " ██║     ███████║  ███╔╝  ╚████╔╝ ███████╗██║   ██║██║   ██║██████╔╝██║     █████╗  ")
@@ -26,7 +45,7 @@ print(" 00) Update")
 
 text = raw_input(Fore.WHITE + " LazySource > ")
 if text == "00":
-    #os.system('rm -r ' + os.getcwd())
+    #os.system('rm -r ' + os.getcwd())  
     #os.system('rm -r /home/LazySource')
     filepath = os.path.abspath('')
     shutil.rmtree(filepath)
