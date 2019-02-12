@@ -8,6 +8,8 @@
 
 > sudo apt-get install python-pip
 
+> sudo pip install pip-update
+
 > git clone https://github.com/Vaxure1337/LazySource
 
 > cd LazySource
