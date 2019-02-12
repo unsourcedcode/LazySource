@@ -1,8 +1,7 @@
 LazySource
 =============== 
 :Creator: Vaxure
-:File: LazySource
-:Version: V1.4
+:Version: V1.4.0
 Installation
 ==============
 
