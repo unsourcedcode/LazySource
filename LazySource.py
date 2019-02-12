@@ -3,7 +3,7 @@ from colorama import Fore
 import time
 import os
 from pathlib import Path
-from git import RemoteProgress
+import git
 #import exchanges
 
 print(Fore.BLUE + "\n\n ██╗      █████╗ ███████╗██╗   ██╗███████╗ ██████╗ ██╗   ██╗██████╗  ██████╗███████╗")
