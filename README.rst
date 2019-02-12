@@ -1,8 +1,11 @@
-# LazySource
+LazySource
 =============== 
+:Creator: Vaxure
+:File: LazySource
 :Version: V1.4
+Installation
+==============
 
-## Installation
 > sudo apt-get update
 
 > sudo apt-get upgrade
