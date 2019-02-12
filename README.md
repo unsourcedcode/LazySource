@@ -4,7 +4,7 @@
 
 > sudo apt-get upgrade
 
-> sudo apt-get python
+> sudo apt-get install python
 
 > sudo apt-get install python-pip
 
