@@ -2,7 +2,7 @@
 from colorama import Fore
 import time
 import os
-import git
+from pathlib import Path
 from git import RemoteProgress
 #import exchanges
 
@@ -24,8 +24,8 @@ print(" 00) Update")
 
 text = raw_input(Fore.WHITE + " LazySource > ")
 if text == "00":
-    dire = os.getcwd()
-    os.system('rm -r ' + dire)
+    mypath = Path().absolute()
+    os.system('rm -r ' + mypath)
     os.system('cd ..')
     git.Repo.clone_from('https://github.com/Vaxure1337/LazySource', '/home/')
     print("The file has been installed in the folder home")
