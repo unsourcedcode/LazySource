@@ -1,7 +1,6 @@
 # LazySource
 =============== 
-:Authors: Broderick Carlin
-:Version: V0.1.0
+:Version: V1.4
 
 ## Installation
 > sudo apt-get update
