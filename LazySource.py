@@ -23,8 +23,9 @@ def install():
     os.system("sudo apt install uniscan")
 
 def startup():
-    os.system("python setup.py")
+    os.system("python setup.py install")
     install()
+    os.system("clear")
 
 startup()
 print(Fore.BLUE + "\n\n ██╗      █████╗ ███████╗██╗   ██╗███████╗ ██████╗ ██╗   ██╗██████╗  ██████╗███████╗")
