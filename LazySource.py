@@ -25,7 +25,7 @@ print(" 00) Update")
 text = raw_input(Fore.WHITE + " LazySource > ")
 if text == "00":
     mypath = Path().absolute()
-    os.system('rm -r ' + mypath)
+    os.system('rm -r ' + mypath._str)
     os.system('cd ..')
     git.Repo.clone_from('https://github.com/Vaxure1337/LazySource', '/home/')
     print("The file has been installed in the folder home")
