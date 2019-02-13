@@ -32,5 +32,7 @@ Version: 1.4.0 - Beta
 > “What hackers do is figure out technology and experiment with it in ways many people never imagined. They also have a strong desire to share this information with others and to explain it to people whose only qualification may be the desire to learn.” 
 ― Emmanuel Goldstein
 
+>Are hackers a threat? The degree of threat presented by any conduct, whether legal or illegal, depends on the actions and intent of the individual and the harm they cause.
+- Emmanuel Goldstein
 
 ![](https://cdn.discordapp.com/attachments/537716599424286762/545046830811971586/Untitled_design.png)
