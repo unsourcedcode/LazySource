@@ -45,6 +45,16 @@ def install():
     os.system("sudo apt install nikto")
     print("Installing doona")
     os.system("sudo apt install doona")
+    print("Inatlling dnstracer")
+    os.system("sudo apt install dnstracer")
+    print("Installing dnswalk")
+    os.system("sudo apt install dnswalk")
+    print("Installing dotdotpwn.pl")
+    os.system("sudo apt install dotdotpwn")
+    print("Installing enum4linux")
+    os.system("sudo apt install enum4linux")
+    print("Installing enumiax")
+    os.system("sudo apt install enumiax")
 
 if args.lastest_version:
     link = "http://www.lazysource.gq/version"
@@ -70,7 +80,7 @@ print(Fore.WHITE + " ██║     ██╔══██║ ███╔╝    �
 print(Fore.RED + " ███████╗██║  ██║███████╗   ██║   ███████║╚██████╔╝╚██████╔╝██║  ██║╚██████╗███████╗")
 print(Fore.RED + " ╚══════╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚══════╝ \n\n")
 
-print(Fore.WHITE + "  Loaded " + Fore.GREEN + "9" + Fore.WHITE + " Tools\n  Version " + Fore.YELLOW + "1.4.4" + Fore.WHITE +"\n  Made By " + Fore.BLUE + "Vaxure" + Fore.WHITE + "\n<---------------------->\n")
+print(Fore.WHITE + "  Loaded " + Fore.GREEN + "19" + Fore.WHITE + " Tools\n  Version " + Fore.YELLOW + "1.4.5" + Fore.WHITE +"\n  Made By " + Fore.BLUE + "Vaxure" + Fore.WHITE + "\n<---------------------->\n")
 print(" 1) Sqlmap")
 print(" 2) JSql")
 print(" 3) BBQSQL")
@@ -85,6 +95,11 @@ print(" 11) Airbase-ng")
 print(" 12) Bully")
 print(" 13) Nikto")
 print(" 14) Doona")
+print(" 15) Dnstracer")
+print(" 16) Dnswalk")
+print(" 17) DotDotPwn")
+print(" 18) Enum4linux")
+print(" 19) EnumIAX")
 
 text = raw_input(Fore.WHITE + " LazySource > ")
 if text == "00":
@@ -95,32 +110,61 @@ if text == "00":
     git.Repo.clone_from('https://github.com/Vaxure1337/LazySource', filepath)
     print("The file has been installed in the folder home")
 elif text == "1":
+    os.system("clear")
     os.system("sqlmap")
 elif text == "2":
+    os.system("clear")
     os.system("jsql")
 if text == "3":
+    os.system("clear")
     os.system("bbqsql")
 elif text == "4":
+    os.system("clear")
     os.system("nmap")
 elif text == "5":
+    os.system("clear")
     os.system("uniscan")
 elif text == "6":
+    os.system("clear")
     os.system("amap")
 elif text == "7":
+    os.system("clear")
     os.system("sqlninja -h")
 elif text == "8":
+    os.system("clear")
     os.system("sqlsus")
 elif text == "9":
+    os.system("clear")
     os.system("shellnoob -h")
 elif text == "10":
+    os.system("clear")
     os.system("cewl --help")
 elif text == "11":
+    os.system("clear")
     os.system("airbase-ng --help")
 elif text == "12":
+    os.system("clear")
     os.system("bully -h")
 elif text == "13":
+    os.system("clear")
     os.system("nikto -Help")
 elif text == "14":
+    os.system("clear")
     os.system("doona -h")
+elif text == "15":
+    os.system("clear")
+    os.system("dnstracer")
+elif text == "16":
+    os.system("clear")
+    os.system("dnswalk --help")
+elif text == "17":
+    os.system("clear")
+    os.system("dotdotpwn.pl")
+elif text == "18":
+    os.system("clear")
+    os.system("enum4linux -h")
+elif text == "19":
+    os.system("clear")
+    os.system("enumiax -h")
 else:
     raise SystemExit
