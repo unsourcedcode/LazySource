@@ -1,8 +1,4 @@
 LazySource
-
-![](https://ibb.co/VB1mKD4)
-
-
 =============== 
 :Creator: Vaxure
 :Version: V1.4.0
