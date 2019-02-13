@@ -101,7 +101,7 @@ print(" 17) DotDotPwn")
 print(" 18) Enum4linux")
 print(" 19) EnumIAX")
 
-text = raw_input(Fore.WHITE + " LazySource > ")
+text = raw_input(Fore.WHITE + "\n LazySource > ")
 if text == "00":
     #os.system('rm -r ' + os.getcwd())
     #os.system('rm -r /home/LazySource')
