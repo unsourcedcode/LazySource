@@ -33,6 +33,6 @@ Version: 1.4.0 - Beta
 ― Emmanuel Goldstein
 
 >Are hackers a threat? The degree of threat presented by any conduct, whether legal or illegal, depends on the actions and intent of the individual and the harm they cause.
-- Emmanuel Goldstein
+― Emmanuel Goldstein
 
 ![](https://cdn.discordapp.com/attachments/537716599424286762/545046830811971586/Untitled_design.png)
