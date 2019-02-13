@@ -9,7 +9,7 @@ import git
 import argparse
 import urllib
 
-parser = argparse.ArgumentParser()  
+parser = argparse.ArgumentParser()
 parser.add_argument("-L", "--lastest_version", help="show the lastest program version", action="store_true")
 parser.add_argument("-U", "--update", help="update the pentesting tools", action="store_true")
 args = parser.parse_args()
@@ -35,8 +35,18 @@ def install():
     os.system("sudo apt install sqlsus")
     print("Installing ShellNoob")
     os.system("sudo apt install shellnoob")
+    print("Installing cewl")
+    os.system("sudo apt install cewl")
+    print("Installing airbase-ng")
+    os.system("sudo apt install airbase-ng")
+    print("Installing bully")
+    os.system("sudo apt install bully")
+    print("Installing nikto")
+    os.system("sudo apt install nikto")
+    print("Installing doona")
+    os.system("sudo apt install doona")
 
-if args.lastest_version:  
+if args.lastest_version:
     link = "http://www.lazysource.gq/version"
     fvers = urllib.urlopen(link)
     vers = fvers.read()
@@ -70,11 +80,15 @@ print(" 6) Amap")
 print(" 7) Sqlninja")
 print(" 8) Sqlsus")
 print(" 9) ShellNoob")
-print(" 00) Update")
+print(" 10) CeWL")
+print(" 11) Airbase-ng")
+print(" 12) Bully")
+print(" 13) Nikto")
+print(" 14) Doona")
 
 text = raw_input(Fore.WHITE + " LazySource > ")
 if text == "00":
-    #os.system('rm -r ' + os.getcwd())  
+    #os.system('rm -r ' + os.getcwd())
     #os.system('rm -r /home/LazySource')
     filepath = os.path.abspath('')
     shutil.rmtree(filepath)
@@ -98,7 +112,15 @@ elif text == "8":
     os.system("sqlsus")
 elif text == "9":
     os.system("shellnoob -h")
+elif text == "10":
+    os.system("cewl --help")
+elif text == "11":
+    os.system("airbase-ng --help")
+elif text == "12":
+    os.system("bully -h")
+elif text == "13":
+    os.system("nikto -Help")
+elif text == "14":
+    os.system("doona -h")
 else:
     raise SystemExit
-
-
