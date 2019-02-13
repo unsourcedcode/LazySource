@@ -4,7 +4,6 @@ about: Pen-testing tool
 Name: LazySource
 Version: 1.4.0 - Beta
 ---
-![](https://cdn.discordapp.com/attachments/537716599424286762/545046830811971586/Untitled_design.png)
 
 # LazySource 
 
@@ -29,4 +28,6 @@ Version: 1.4.0 - Beta
 > python setup.py install
 
 > python LazySource.py
+***
 
+![](https://cdn.discordapp.com/attachments/537716599424286762/545046830811971586/Untitled_design.png)
