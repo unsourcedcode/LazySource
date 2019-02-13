@@ -29,5 +29,8 @@ Version: 1.4.0 - Beta
 
 > python LazySource.py
 ***
+> “What hackers do is figure out technology and experiment with it in ways many people never imagined. They also have a strong desire to share this information with others and to explain it to people whose only qualification may be the desire to learn.” 
+― Emmanuel Goldstein
+
 
 ![](https://cdn.discordapp.com/attachments/537716599424286762/545046830811971586/Untitled_design.png)
