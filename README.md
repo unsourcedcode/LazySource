@@ -2,7 +2,7 @@
 Creator: Vaxure
 about: Pen-testing tool
 Name: LazySource
-Version: 1.4.0 - Beta
+Version: 1.4.4 - Beta
 ---
 
 # LazySource 
