@@ -1,35 +1,32 @@
-LazySource
 ---
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
-
+Creator: Vaxure
+about: Pen-testing tool
+Name: LazySource
+Version: 1.4.0 - Beta
 ---
-=============== 
-:Creator: Vaxure
-:Version: V1.4.0
-Installation
-==============
+![](https://cdn.discordapp.com/attachments/537716599424286762/545046830811971586/Untitled_design.png)
 
-``sudo apt-get update``
+# LazySource 
 
-``sudo apt-get upgrade``
+# Installation
 
-``sudo apt-get install python``
+> sudo apt-get update
 
-``sudo apt-get install python-pip``
+> sudo apt-get upgrade
 
-``sudo pip install pip-update``
+> sudo apt-get install python
 
-``git clone https://github.com/Vaxure1337/LazySource``
+> sudo apt-get install python-pip
 
-``cd LazySource``
+> sudo pip install pip-update
 
-``pip install -r requirements.txt``
+> git clone https://github.com/Vaxure1337/LazySource
 
-``python setup.py install``
+> cd LazySource
 
-``python LazySource.py``
+> pip install -r requirements.txt
+
+> python setup.py install
+
+> python LazySource.py
 
