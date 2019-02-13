@@ -23,11 +23,11 @@ Version: 1.4.0 - Beta
 
 > cd LazySource
 
-> pip install -r requirements.txt
+> sudo pip install -r requirements.txt
 
-> python setup.py install
+> sudo python setup.py install
 
-> python LazySource.py
+> sudo python LazySource.py
 ***
 > “What hackers do is figure out technology and experiment with it in ways many people never imagined. They also have a strong desire to share this information with others and to explain it to people whose only qualification may be the desire to learn.” 
 ― Emmanuel Goldstein
