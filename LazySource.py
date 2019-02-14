@@ -81,7 +81,7 @@ print(Fore.WHITE + " ██║     ██╔══██║ ███╔╝    �
 print(Fore.RED + " ███████╗██║  ██║███████╗   ██║   ███████║╚██████╔╝╚██████╔╝██║  ██║╚██████╗███████╗")
 print(Fore.RED + " ╚══════╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚══════╝ \n\n")
 
-print(Fore.WHITE + "  Loaded " + Fore.GREEN + "19" + Fore.WHITE + " Tools\n  Version " + Fore.YELLOW + "1.4.5" + Fore.WHITE +"\n  Made By " + Fore.BLUE + "Vaxure" + Fore.WHITE + "\n<---------------------->\n")
+print(Fore.WHITE + "  Loaded " + Fore.GREEN + "19" + Fore.WHITE + " Tools\n  Version " + Fore.YELLOW + "1.4.5 - Pre-Release" + Fore.WHITE +"\n  Made By " + Fore.BLUE + "Vaxure" + Fore.WHITE + "\n<---------------------->\n")
 print(" 1) Sqlmap")
 print(" 2) JSql")
 print(" 3) BBQSQL")
