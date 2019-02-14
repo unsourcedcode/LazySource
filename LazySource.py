@@ -8,6 +8,7 @@ import shutil
 import git
 import argparse
 import urllib
+import signal
 
 Pversion = "1.4.8"
 
@@ -28,8 +29,10 @@ class SIGINT_handler():
         self.SIGINT = False
 
     def signal_handler(self, signal, frame):
-        print( "[" + Fore.LIGHTRED_EX + "Warning] - "+ Fore.WHITE + "You pressed Ctrl+C! ")
+        print('You pressed Ctrl+C!')
         self.SIGINT = True
+
+
 handler = SIGINT_handler()
 signal.signal(signal.SIGINT, handler.signal_handler)
 
