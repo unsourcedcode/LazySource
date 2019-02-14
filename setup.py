@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
    name='LazySource',
-   version='1.4.5',
+   version='1.4.6',
    description='Tool',
    author='Vaxure',
    author_email='vaxure@protonmail.com',

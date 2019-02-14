@@ -56,6 +56,38 @@ def install():
     os.system("sudo apt install enum4linux")
     print("Installing enumiax")
     os.system("sudo apt install enumiax")
+    print("Installing eyewitness")
+    os.system("sudo apt install eyewitness")
+    print("Installing faraday")
+    os.system("sudo apt install faraday")
+    print("Installing fierce")
+    os.system("sudo apt install fierce")
+    print("Installing firewalk")
+    os.system("sudo apt install firewalk")
+    print("Installing fragroute")
+    os.system("sudo apt install fragroute")
+    print("Installing fragrouter")
+    os.system("sudo apt install fragrouter")
+    print("Installing ghost-phisher")
+    os.system("sudo apt install ghost-phisher")
+    print("Installing ohrwurm")
+    os.system("sudo apt install ohrwurm")
+    print("Installing oscanner")
+    os.system("sudo apt install oscanner")
+    print("Installing powerfuzzer")
+    os.system("sudo apt install powerfuzzer")
+    print("Installing sfuzz")
+    os.system("sudo apt install sfuzz")
+    print("Installing sidguess")
+    os.system("sudo apt install sidguess")
+    print("installing siparmyknife")
+    os.system("sudo apt install siparmyknife")
+    print("Installing tnscmd10g")
+    os.system("sudo apt install tnscmd10g")
+    print("Installing unix-privesc-check")
+    os.system("sudo apt install unix-privesc-check")
+    print("Installing yersinia")
+    os.system("sudo apt install yersinia")
 
 if args.lastest_version:
     link = "http://www.lazysource.gq/version"
@@ -81,7 +113,7 @@ print(Fore.WHITE + " ██║     ██╔══██║ ███╔╝    �
 print(Fore.RED + " ███████╗██║  ██║███████╗   ██║   ███████║╚██████╔╝╚██████╔╝██║  ██║╚██████╗███████╗")
 print(Fore.RED + " ╚══════╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚══════╝ \n\n")
 
-print(Fore.WHITE + "  Loaded " + Fore.GREEN + "19" + Fore.WHITE + " Tools\n  Version " + Fore.YELLOW + "1.4.5 - Pre-Release" + Fore.WHITE +"\n  Made By " + Fore.BLUE + "Vaxure" + Fore.WHITE + "\n<---------------------->\n")
+print(Fore.WHITE + "  Loaded " + Fore.GREEN + "35" + Fore.WHITE + " Tools\n  Version " + Fore.YELLOW + "1.4.6 - Pre-Release" + Fore.WHITE +"\n  Made By " + Fore.BLUE + "Vaxure" + Fore.WHITE + "\n<---------------------->\n")
 print(" 1) Sqlmap")
 print(" 2) JSql")
 print(" 3) BBQSQL")
@@ -101,6 +133,22 @@ print(" 16) Dnswalk")
 print(" 17) DotDotPwn")
 print(" 18) Enum4linux")
 print(" 19) EnumIAX")
+print(" 20) EyeWitness")
+print(" 21) Faraday")
+print(" 22) Fierce")
+print(" 23) Firewalk")
+print(" 24) Fragroute")
+print(" 25) Fragrouter")
+print(" 26) Ghost Phisher")
+print(" 27) Ohrwurm")
+print(" 28) Oscanner")
+print(" 29) Powerfuzzer")
+print(" 30) Sfuzz")
+print(" 31) SidGuesser")
+print(" 32) SIPArmyKnife")
+print(" 33) Tnscmd10g")
+print(" 34) Unix-Privesc-Check")
+print(" 35) Yersinia")
 
 text = raw_input(Fore.WHITE + "\n LazySource > ")
 if text == "00":
@@ -167,5 +215,53 @@ elif text == "18":
 elif text == "19":
     clear()
     os.system("enumiax -h")
+elif text == "20":
+    clear()
+    os.system("eyewitness -h")
+elif text == "21":
+    clear()
+    os.system("python-faraday -h")
+elif text == "22":
+    clear()
+    os.system("fierce -h")
+elif text == "23":
+    clear()
+    os.system("firewalk -h")
+elif text == "24":
+    clear()
+    os.system("fragroute")
+elif text == "25":
+    clear()
+    os.system("fragrouter")
+elif text == "26":
+    clear()
+    os.system("ghost-phisher")
+elif text == "27":
+    clear()
+    os.system("ohrwurm")
+elif text == "28":
+    clear()
+    os.system("oscanner")
+elif text == "29":
+    clear()
+    os.system("powerfuzzer")
+elif text == "30":
+    clear()
+    os.system("sfuzz -h")
+elif text == "31":
+    clear()
+    os.system("sidguess")
+elif text == "32":
+    clear()
+    os.system("siparmyknife")
+elif text == "33":
+    clear()
+    os.system("tnscmd10g")
+elif text == "34":
+    clear()
+    os.system("unix-privesc-check")
+elif text == "35":
+    clear()
+    os.system("yersinia -h")
 else:
     raise SystemExit
