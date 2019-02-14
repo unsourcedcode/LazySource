@@ -9,7 +9,7 @@ import git
 import argparse
 import urllib
 
-Pversion = "1.4.7"
+Pversion = "1.4.8"
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-L", "--lastest_version", help="show the lastest program version", action="store_true")
@@ -17,6 +17,10 @@ parser.add_argument("-U", "--update", help="update the pentesting tools", action
 parser.add_argument("-I", "--installation", help="install the pentesting tools", action="store_true")
 args = parser.parse_args()
 clear = lambda: os.system('clear')
+
+link = "https://pastebin.com/raw/JN9RC4Wj"
+fvers = urllib.urlopen(link)
+vers = fvers.read()
 
 def install():
     os.system("sudo apt-get update")
@@ -129,45 +133,25 @@ print(Fore.WHITE + " ██║     ███████║  ███╔╝  �
 print(Fore.WHITE + " ██║     ██╔══██║ ███╔╝    ╚██╔╝  ╚════██║██║   ██║██║   ██║██╔══██╗██║     ██╔══╝  ")
 print(Fore.RED + " ███████╗██║  ██║███████╗   ██║   ███████║╚██████╔╝╚██████╔╝██║  ██║╚██████╗███████╗")
 print(Fore.RED + " ╚══════╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚══════╝ \n\n")
-link = "https://pastebin.com/raw/JN9RC4Wj"
-fvers = urllib.urlopen(link)
-vers = fvers.read()
 
 print(Fore.WHITE + "  Loaded " + Fore.GREEN + "35" + Fore.WHITE + " Tools\n  Your Version " + Fore.YELLOW + Pversion +" - Pre-Release\n" + Fore.WHITE + "  Last Version " + Fore.YELLOW + vers + Fore.WHITE + "\n  Try python LazySource" + Fore.YELLOW + " -h" + Fore.WHITE + "\n  Made By " + Fore.BLUE + "Vaxure" + Fore.WHITE + "\n  <---------------------->\n")
-print(" 1) Sqlmap")
-print(" 2) JSql")
-print(" 3) BBQSQL")
-print(" 4) Nmap")
-print(" 5) Uniscan")
-print(" 6) Amap")
-print(" 7) Sqlninja")
-print(" 8) Sqlsus")
-print(" 9) ShellNoob")
-print(" 10) CeWL")
-print(" 11) Airbase-ng")
-print(" 12) Bully")
-print(" 13) Nikto")
-print(" 14) Doona")
-print(" 15) Dnstracer")
-print(" 16) Dnswalk")
-print(" 17) DotDotPwn")
-print(" 18) Enum4linux")
-print(" 19) EnumIAX")
-print(" 20) EyeWitness")
-print(" 21) Faraday")
-print(" 22) Fierce")
-print(" 23) Firewalk")
-print(" 24) Fragroute")
-print(" 25) Fragrouter")
-print(" 26) Ghost Phisher")
-print(" 27) Ohrwurm")
-print(" 28) Oscanner")
-print(" 29) Powerfuzzer")
-print(" 30) Sfuzz")
-print(" 31) SidGuesser")
-print(" 32) SIPArmyKnife")
-print(" 33) Tnscmd10g")
-print(" 34) Unix-Privesc-Check")
+print(" 1) Sqlmap          2) JSql")
+print(" 3) BBQSQL          4) Nmap")
+print(" 5) Uniscan         6) Amap")
+print(" 7) Sqlninja        8) Sqlsus")
+print(" 9) ShellNoob       10) CeWL")
+print(" 11) Airbase-ng     12) Bully")
+print(" 13) Nikto          14) Doona")
+print(" 15) Dnstracer      16) Dnswalk")
+print(" 17) DotDotPwn      18) Enum4linux")
+print(" 19) EnumIAX        20) EyeWitness")
+print(" 21) Faraday        22) Fierce")
+print(" 23) Firewalk       24) Fragroute")
+print(" 25) Fragrouter     26) Ghost Phisher")
+print(" 27) Ohrwurm        28) Oscanner")
+print(" 29) Powerfuzzer    30) Sfuzz")
+print(" 31) SidGuesser     32) SIPArmyKnife")
+print(" 33) Tnscmd10g      34) Unix-Privesc-Check")
 print(" 35) Yersinia")
 
 text = raw_input(Fore.WHITE + "\n LazySource > ")
