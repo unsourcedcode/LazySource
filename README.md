@@ -6,7 +6,6 @@ Version: 1.4.8 - Pre-Release
 ---
 
 # LazySource
-[![Github all releases](https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg)](https://github.com/unsourcedcode/LazySource/releases)
 
 [![star this repo](http://githubbadges.com/star.svg?user=unsourcedcode&repo=LazySource&style=flat)](https://github.com/unsourcedcode/LazySource)
 
