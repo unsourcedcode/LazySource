@@ -9,6 +9,8 @@ import git
 import argparse
 import urllib
 
+Pversion = "1.4.7"
+
 parser = argparse.ArgumentParser()
 parser.add_argument("-L", "--lastest_version", help="show the lastest program version", action="store_true")
 parser.add_argument("-U", "--update", help="update the pentesting tools", action="store_true")
@@ -19,6 +21,14 @@ clear = lambda: os.system('clear')
 def install():
     os.system("sudo apt-get update")
     os.system("sudo apt-get upgrade")
+    print("Installing gitpython")
+    os.system("sudo pip install gitpython")
+    print("Installing colorama")
+    os.system("sudo pip install colorama")
+    print("Installing pathlib")
+    os.system("sudo pip install pathlib")
+    print("Installing argparse")
+    os.system("sudo pip isntall argparse")
     print("Installing Sqlmap")
     os.system("sudo apt install sqlmap")
     print("Installing jsql")
@@ -91,10 +101,11 @@ def install():
     os.system("sudo apt install yersinia")
 
 if args.lastest_version:
-    link = "http://www.lazysource.gq/version"
+    link = "https://pastebin.com/raw/JN9RC4Wj"
     fvers = urllib.urlopen(link)
     vers = fvers.read()
     print("the lastest program version is" + Fore.GREEN + vers)
+    print("your program version is" + Fore.GREEN + Pversion)
     os._exit(1)
 elif args.update:
     install()
@@ -106,6 +117,7 @@ elif args.installation:
     os._exit(1)
 
 def startup():
+    os.system("sudo pip install -r requirements.txt")
     os.system("python setup.py install")
     install()
     clear()
@@ -117,8 +129,11 @@ print(Fore.WHITE + " ██║     ███████║  ███╔╝  �
 print(Fore.WHITE + " ██║     ██╔══██║ ███╔╝    ╚██╔╝  ╚════██║██║   ██║██║   ██║██╔══██╗██║     ██╔══╝  ")
 print(Fore.RED + " ███████╗██║  ██║███████╗   ██║   ███████║╚██████╔╝╚██████╔╝██║  ██║╚██████╗███████╗")
 print(Fore.RED + " ╚══════╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚══════╝ \n\n")
+link = "https://pastebin.com/raw/JN9RC4Wj"
+fvers = urllib.urlopen(link)
+vers = fvers.read()
 
-print(Fore.WHITE + "  Loaded " + Fore.GREEN + "35" + Fore.WHITE + " Tools\n  Version " + Fore.YELLOW + "1.4.6 - Pre-Release" + Fore.WHITE +"\n  Made By " + Fore.BLUE + "Vaxure" + Fore.WHITE + "\n<---------------------->\n")
+print(Fore.WHITE + "  Loaded " + Fore.GREEN + "35" + Fore.WHITE + " Tools\n  Your Version " + Fore.YELLOW + Pversion +" - Pre-Release\n" + Fore.WHITE + "  Last Version " + Fore.YELLOW + vers + Fore.WHITE + "\n  Try python LazySource" + Fore.YELLOW + " -h" + Fore.WHITE + "\n  Made By " + Fore.BLUE + "Vaxure" + Fore.WHITE + "\n  <---------------------->\n")
 print(" 1) Sqlmap")
 print(" 2) JSql")
 print(" 3) BBQSQL")
@@ -156,14 +171,7 @@ print(" 34) Unix-Privesc-Check")
 print(" 35) Yersinia")
 
 text = raw_input(Fore.WHITE + "\n LazySource > ")
-if text == "00":
-    #os.system('rm -r ' + os.getcwd())
-    #os.system('rm -r /home/LazySource')
-    filepath = os.path.abspath('')
-    shutil.rmtree(filepath)
-    git.Repo.clone_from('https://github.com/Vaxure1337/LazySource', filepath)
-    print("The file has been installed in the folder home")
-elif text == "1":
+if text == "1":
     clear()
     os.system("sqlmap")
 elif text == "2":
