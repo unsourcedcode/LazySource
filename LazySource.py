@@ -15,6 +15,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-L", "--lastest_version", help="show the lastest program version", action="store_true")
 parser.add_argument("-U", "--update", help="update the pentesting tools", action="store_true")
 parser.add_argument("-I", "--installation", help="install the pentesting tools", action="store_true")
+parser.add_argument("-N", "--news", help="show news of LazySource", action="store_true")
 args = parser.parse_args()
 clear = lambda: os.system('clear')
 
@@ -108,16 +109,22 @@ if args.lastest_version:
     link = "https://pastebin.com/raw/JN9RC4Wj"
     fvers = urllib.urlopen(link)
     vers = fvers.read()
-    print("the lastest program version is" + Fore.GREEN + vers)
+    print("the lastest program version is" + Fore.GREEN + vers + Fore.WHITE)
     print("your program version is" + Fore.GREEN + Pversion)
     os._exit(1)
 elif args.update:
     install()
-    print(Fore.GREEN + "Done Updating Pentesting Tools.")
+    print(Fore.GREEN + "Done Updating Pentesting Tools." + Fore.WHITE)
     os._exit(1)
 elif args.installation:
     install()
-    print(Fore.GREEN + "Done Installing Pentesting Tools.")
+    print(Fore.GREEN + "Done Installing Pentesting Tools." + Fore.WHITE)
+    os._exit(1)
+elif args.news:
+    link = "https://pastebin.com/raw/fvr6QC8X"
+    fvers = urllib.urlopen(link)
+    vers = fvers.read()
+    print(Fore.CYAN + "News: " + Fore.YELLOW + vers + Fore.WHITE)
     os._exit(1)
 
 def startup():
