@@ -13,6 +13,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-L", "--lastest_version", help="show the lastest program version", action="store_true")
 parser.add_argument("-U", "--update", help="update the pentesting tools", action="store_true")
 args = parser.parse_args()
+clear = lambda: os.system('clear')
 
 def install():
     os.system("sudo apt-get update")
@@ -70,7 +71,7 @@ elif args.update:
 def startup():
     os.system("python setup.py install")
     install()
-    os.system("clear")
+    clear()
 
 startup()
 print(Fore.BLUE + "\n\n ██╗      █████╗ ███████╗██╗   ██╗███████╗ ██████╗ ██╗   ██╗██████╗  ██████╗███████╗")
@@ -110,61 +111,61 @@ if text == "00":
     git.Repo.clone_from('https://github.com/Vaxure1337/LazySource', filepath)
     print("The file has been installed in the folder home")
 elif text == "1":
-    os.system("clear")
+    clear()
     os.system("sqlmap")
 elif text == "2":
-    os.system("clear")
+    clear()
     os.system("jsql")
 if text == "3":
-    os.system("clear")
+    clear()
     os.system("bbqsql")
 elif text == "4":
-    os.system("clear")
+    clear()
     os.system("nmap")
 elif text == "5":
-    os.system("clear")
+    clear()
     os.system("uniscan")
 elif text == "6":
-    os.system("clear")
+    clear()
     os.system("amap")
 elif text == "7":
-    os.system("clear")
+    clear()
     os.system("sqlninja -h")
 elif text == "8":
-    os.system("clear")
+    clear()
     os.system("sqlsus")
 elif text == "9":
-    os.system("clear")
+    clear()
     os.system("shellnoob -h")
 elif text == "10":
-    os.system("clear")
+    clear()
     os.system("cewl --help")
 elif text == "11":
-    os.system("clear")
+    clear()
     os.system("airbase-ng --help")
 elif text == "12":
-    os.system("clear")
+    clear()
     os.system("bully -h")
 elif text == "13":
-    os.system("clear")
+    clear()
     os.system("nikto -Help")
 elif text == "14":
-    os.system("clear")
+    clear()
     os.system("doona -h")
 elif text == "15":
-    os.system("clear")
+    clear()
     os.system("dnstracer")
 elif text == "16":
-    os.system("clear")
+    clear()
     os.system("dnswalk --help")
 elif text == "17":
-    os.system("clear")
+    clear()
     os.system("dotdotpwn.pl")
 elif text == "18":
-    os.system("clear")
+    clear()
     os.system("enum4linux -h")
 elif text == "19":
-    os.system("clear")
+    clear()
     os.system("enumiax -h")
 else:
     raise SystemExit
