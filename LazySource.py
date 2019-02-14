@@ -109,8 +109,8 @@ if args.lastest_version:
     link = "https://pastebin.com/raw/JN9RC4Wj"
     fvers = urllib.urlopen(link)
     vers = fvers.read()
-    print("the lastest program version is" + Fore.GREEN + vers + Fore.WHITE)
-    print("your program version is" + Fore.GREEN + Pversion)
+    print("the lastest program version is " + Fore.GREEN + vers + Fore.WHITE)
+    print("your program version is " + Fore.GREEN + Pversion + Fore.WHITE)
     os._exit(1)
 elif args.update:
     install()
