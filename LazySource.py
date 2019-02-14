@@ -8,7 +8,6 @@ import shutil
 import git
 import argparse
 import urllib
-import signal
 
 Pversion = "1.4.8"
 
@@ -23,22 +22,6 @@ clear = lambda: os.system('clear')
 link = "https://pastebin.com/raw/JN9RC4Wj"
 fvers = urllib.urlopen(link)
 vers = fvers.read() 
-
-class SIGINT_handler():
-    def __init__(self):
-        self.SIGINT = False
-
-    def signal_handler(self, signal, frame):
-        print('You pressed Ctrl+C!')
-        self.SIGINT = True
-
-
-handler = SIGINT_handler()
-signal.signal(signal.SIGINT, handler.signal_handler)
-
-while True:
-    if handler.SIGINT:
-        break
 
 def install():
     os.system("sudo apt-get update")
