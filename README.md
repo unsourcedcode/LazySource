@@ -6,7 +6,6 @@ Version: 1.4.8 - Pre-Release
 ---
 
 # LazySource
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 [![star this repo](http://githubbadges.com/star.svg?user=unsourcedcode&repo=LazySource&style=flat)](https://github.com/unsourcedcode/LazySource)
 [![fork this repo](http://githubbadges.com/fork.svg?user=unsourcedcode&repo=LazySource&style=flat)](https://github.com/unsourcedcode/LazySource/fork)
 
@@ -39,3 +38,4 @@ Version: 1.4.8 - Pre-Release
 ― Emmanuel Goldstein
 
 ![](https://cdn.discordapp.com/attachments/537716599424286762/545046830811971586/Untitled_design.png)
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
