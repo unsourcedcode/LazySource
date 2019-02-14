@@ -12,6 +12,7 @@ import urllib
 parser = argparse.ArgumentParser()
 parser.add_argument("-L", "--lastest_version", help="show the lastest program version", action="store_true")
 parser.add_argument("-U", "--update", help="update the pentesting tools", action="store_true")
+parser.add_argument("-I", "--installation", help="install the pentesting tools", action="store_true")
 args = parser.parse_args()
 clear = lambda: os.system('clear')
 
@@ -98,6 +99,10 @@ if args.lastest_version:
 elif args.update:
     install()
     print(Fore.GREEN + "Done Updating Pentesting Tools.")
+    os._exit(1)
+elif args.installation:
+    install()
+    print(Fore.GREEN + "Done Installing Pentesting Tools.")
     os._exit(1)
 
 def startup():
