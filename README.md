@@ -6,6 +6,7 @@ Version: 1.4.8 - Pre-Release
 ---
 
 # LazySource
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 [![star this repo](http://githubbadges.com/star.svg?user=unsourcedcode&repo=LazySource&style=flat)](https://github.com/unsourcedcode/LazySource)
 [![fork this repo](http://githubbadges.com/fork.svg?user=unsourcedcode&repo=LazySource&style=flat)](https://github.com/unsourcedcode/LazySource/fork)
 
