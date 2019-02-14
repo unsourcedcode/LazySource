@@ -8,8 +8,8 @@ Version: 1.4.8 - Pre-Release
 # LazySource
 
 [![star this repo](http://githubbadges.com/star.svg?user=unsourcedcode&repo=LazySource&style=flat)](https://github.com/unsourcedcode/LazySource)
-
 [![fork this repo](http://githubbadges.com/fork.svg?user=unsourcedcode&repo=LazySource&style=flat)](https://github.com/unsourcedcode/LazySource/fork)
+[![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 
 # Installation
 
