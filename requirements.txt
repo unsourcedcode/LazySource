@@ -1,2 +1,6 @@
 setuptools==40.8.0
 urllib3==1.24.1
+colorama==0.4.1
+pathlib==1.0.1
+pytest-shutil==1.6.0
+argparse==1.4.0
