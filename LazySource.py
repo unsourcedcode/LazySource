@@ -9,7 +9,7 @@ import git
 import argparse
 import urllib
 
-Pversion = "1.4.8"
+Pversion = "1.4.9"
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-L", "--lastest_version", help="show the lastest program version", action="store_true")
@@ -21,7 +21,7 @@ clear = lambda: os.system('clear')
 
 link = "https://pastebin.com/raw/JN9RC4Wj"
 fvers = urllib.urlopen(link)
-vers = fvers.read() 
+vers = fvers.read()
 
 def install():
     os.system("sudo apt-get update")
@@ -106,6 +106,7 @@ def install():
     os.system("sudo apt install yersinia")
 
 if args.lastest_version:
+    os.system("clear")
     link = "https://pastebin.com/raw/JN9RC4Wj"
     fvers = urllib.urlopen(link)
     vers = fvers.read()
@@ -113,14 +114,17 @@ if args.lastest_version:
     print("your program version is " + Fore.GREEN + Pversion + Fore.WHITE)
     os._exit(1)
 elif args.update:
+    os.system("clear")
     install()
     print(Fore.GREEN + "Done Updating Pentesting Tools." + Fore.WHITE)
     os._exit(1)
 elif args.installation:
+    os.system("clear")
     install()
     print(Fore.GREEN + "Done Installing Pentesting Tools." + Fore.WHITE)
     os._exit(1)
 elif args.news:
+    os.system("clear")
     link = "https://pastebin.com/raw/fvr6QC8X"
     fvers = urllib.urlopen(link)
     vers = fvers.read()
