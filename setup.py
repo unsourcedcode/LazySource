@@ -8,7 +8,5 @@ setup(
    url='http://www.lazysource.gq/',
    author='Vaxure',
    author_email='vaxure@protonmail.com',
-   zip_safe,
-   include_package_data,
    install_requires=['gitpython', 'colorama', 'pathlib', "argparse"], #external packages as dependencies
 )
