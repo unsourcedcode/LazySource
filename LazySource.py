@@ -26,6 +26,8 @@ vers = fvers.read()
 def install():
     os.system("sudo apt-get update")
     os.system("sudo apt-get upgrade")
+    print("Installing lynx")
+    os.system("sudo apt install lynx")
     print("Installing gitpython")
     os.system("sudo pip install gitpython")
     print("Installing colorama")
