@@ -16,6 +16,7 @@ parser.add_argument("-L", "--lastest_version", help="show the lastest program ve
 parser.add_argument("-U", "--update", help="update the pentesting tools", action="store_true")
 parser.add_argument("-I", "--installation", help="install the pentesting tools", action="store_true")
 parser.add_argument("-N", "--news", help="show news of LazySource", action="store_true")
+parser.add_argument("-O", "--information", help="show information of LazySource", action="store_true")
 args = parser.parse_args()
 clear = lambda: os.system('clear')
 
@@ -132,6 +133,9 @@ elif args.news:
     vers = fvers.read()
     print(Fore.CYAN + "News: " + Fore.YELLOW + vers + Fore.WHITE)
     os._exit(1)
+elif args.information:
+    os.system("clear")
+    os.system("bash vs.sh")
 
 def startup():
     os.system("sudo pip install -r requirements.txt")
