@@ -149,8 +149,8 @@ def servermessage():
     message = clientsocket.recv(1024)
     clientsocket.close()
     print(message.decode('ascii'))
-    time.sleep(10)
     print("\n\n\n----------------------\nLoading...")
+    time.sleep(10)
     clear()
 
 def startup():
