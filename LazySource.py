@@ -8,6 +8,8 @@ import shutil
 import git
 import argparse
 import urllib
+import socket
+import time
 
 Pversion = "1.4.9"
 
@@ -19,6 +21,12 @@ parser.add_argument("-N", "--news", help="show news of LazySource", action="stor
 parser.add_argument("-O", "--information", help="show information of LazySource", action="store_true")
 args = parser.parse_args()
 clear = lambda: os.system('clear')
+
+#Client start
+clientsocket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+host = socket.gethostname()
+clientsocket.connect(('10.8.2.46', 36487))
+#Client end
 
 link = "https://pastebin.com/raw/JN9RC4Wj"
 fvers = urllib.urlopen(link)
@@ -137,6 +145,14 @@ elif args.information:
     os.system("clear")
     os.system("bash vs.sh")
 
+def servermessage():
+    message = clientsocket.recv(1024)
+    clientsocket.close()
+    print(message.decode('ascii'))
+    time.sleep(10)
+    print("\n\n\n----------------------\nLoading...")
+    clear()
+
 def startup():
     os.system("sudo pip install -r requirements.txt")
     os.system("python setup.py install")
@@ -144,6 +160,7 @@ def startup():
     clear()
 
 startup()
+servermessage()
 print(Fore.BLUE + "\n\n ██╗      █████╗ ███████╗██╗   ██╗███████╗ ██████╗ ██╗   ██╗██████╗  ██████╗███████╗")
 print(Fore.BLUE + " ██║     ██╔══██╗╚══███╔╝╚██╗ ██╔╝██╔════╝██╔═══██╗██║   ██║██╔══██╗██╔════╝██╔════╝")
 print(Fore.WHITE + " ██║     ███████║  ███╔╝  ╚████╔╝ ███████╗██║   ██║██║   ██║██████╔╝██║     █████╗  ")
