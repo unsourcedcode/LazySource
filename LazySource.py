@@ -11,6 +11,9 @@ import urllib
 import socket
 import time
 
+host = socket.gethostname()
+clientsocket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+
 Pversion = "1.4.9"
 
 parser = argparse.ArgumentParser()
@@ -140,7 +143,6 @@ elif args.information:
     os.system("bash vs.sh")
 
 def servermessage():
-    clientsocket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
     message = clientsocket.recv(1024)
     clientsocket.close()
     print(message.decode('ascii'))
@@ -163,6 +165,7 @@ print(Fore.WHITE + " ██║     ██╔══██║ ███╔╝    �
 print(Fore.RED + " ███████╗██║  ██║███████╗   ██║   ███████║╚██████╔╝╚██████╔╝██║  ██║╚██████╗███████╗")
 print(Fore.RED + " ╚══════╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚══════╝ \n\n")
 clientsocket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+host = socket.gethostname()
 clientsocket.connect(('10.8.2.46', 36487))
 message = clientsocket.recv(1024)
 clientsocket.close()
