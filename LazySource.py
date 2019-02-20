@@ -171,7 +171,7 @@ clientsocket.connect(('10.8.2.46', 36487))
 
 message = clientsocket.recv(1024)
 clientsocket.close()
-print(Fore.WHITE + "  Loaded " + Fore.GREEN + "35" + Fore.WHITE + " Tools\n  Your Version " + Fore.YELLOW + Pversion +" - Pre-Release\n" + Fore.WHITE + "  Last Version " + Fore.YELLOW + vers + Fore.WHITE + "\n  Try python LazySource" + Fore.YELLOW + " -h" + Fore.WHITE + "\n  Made By " + Fore.BLUE + "Vaxure" + Fore.WHITE + Fore.CYAN + message.decode('ascii') + "\n  <---------------------->\n")
+print(Fore.WHITE + "  Loaded " + Fore.GREEN + "35" + Fore.WHITE + " Tools\n  Your Version " + Fore.YELLOW + Pversion +" - Pre-Release\n" + Fore.WHITE + "  Last Version " + Fore.YELLOW + vers + Fore.WHITE + "\n  Try python LazySource" + Fore.YELLOW + " -h" + Fore.WHITE + "\n  Made By " + Fore.BLUE + "Vaxure" + Fore.WHITE + Fore.YELLOW + "Donate here: www.paypal.me/Vaxure" + Fore.WHITE + Fore.CYAN + message.decode('ascii') + "\n  <---------------------->\n")
 print(" 1) Sqlmap          2) JSql")
 print(" 3) BBQSQL          4) Nmap")
 print(" 5) Uniscan         6) Amap")
