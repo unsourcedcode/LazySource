@@ -168,6 +168,7 @@ print(Fore.WHITE + " ██║     ██╔══██║ ███╔╝    �
 print(Fore.RED + " ███████╗██║  ██║███████╗   ██║   ███████║╚██████╔╝╚██████╔╝██║  ██║╚██████╗███████╗")
 print(Fore.RED + " ╚══════╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚══════╝ \n\n")
 
+message = clientsocket.recv(1024)
 print(Fore.WHITE + "  Loaded " + Fore.GREEN + "35" + Fore.WHITE + " Tools\n  Your Version " + Fore.YELLOW + Pversion +" - Pre-Release\n" + Fore.WHITE + "  Last Version " + Fore.YELLOW + vers + Fore.WHITE + "\n  Try python LazySource" + Fore.YELLOW + " -h" + Fore.WHITE + "\n  Made By " + Fore.BLUE + "Vaxure" + Fore.WHITE + Fore.CYAN + message.decode('ascii') + "\n  <---------------------->\n")
 print(" 1) Sqlmap          2) JSql")
 print(" 3) BBQSQL          4) Nmap")
