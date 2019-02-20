@@ -22,12 +22,6 @@ parser.add_argument("-O", "--information", help="show information of LazySource"
 args = parser.parse_args()
 clear = lambda: os.system('clear')
 
-#Client start
-clientsocket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-host = socket.gethostname()
-clientsocket.connect(('10.8.2.46', 36487))
-#Client end
-
 link = "https://pastebin.com/raw/JN9RC4Wj"
 fvers = urllib.urlopen(link)
 vers = fvers.read()
@@ -146,6 +140,7 @@ elif args.information:
     os.system("bash vs.sh")
 
 def servermessage():
+    clientsocket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
     message = clientsocket.recv(1024)
     clientsocket.close()
     print(message.decode('ascii'))
@@ -167,11 +162,11 @@ print(Fore.WHITE + " ██║     ███████║  ███╔╝  �
 print(Fore.WHITE + " ██║     ██╔══██║ ███╔╝    ╚██╔╝  ╚════██║██║   ██║██║   ██║██╔══██╗██║     ██╔══╝  ")
 print(Fore.RED + " ███████╗██║  ██║███████╗   ██║   ███████║╚██████╔╝╚██████╔╝██║  ██║╚██████╗███████╗")
 print(Fore.RED + " ╚══════╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚══════╝ \n\n")
+clientsocket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 clientsocket.connect(('10.8.2.46', 36487))
-
 message = clientsocket.recv(1024)
 clientsocket.close()
-print(Fore.WHITE + "  Loaded " + Fore.GREEN + "35" + Fore.WHITE + " Tools\n  Your Version " + Fore.YELLOW + Pversion +" - Pre-Release\n" + Fore.WHITE + "  Last Version " + Fore.YELLOW + vers + Fore.WHITE + "\n  Try python LazySource" + Fore.YELLOW + " -h" + Fore.WHITE + "\n  Made By " + Fore.BLUE + "Vaxure" + Fore.WHITE + Fore.YELLOW + "Donate here: www.paypal.me/Vaxure" + Fore.WHITE + Fore.CYAN + message.decode('ascii') + "\n  <---------------------->\n")
+print(Fore.WHITE + "  Loaded " + Fore.GREEN + "35" + Fore.WHITE + " Tools\n  Your Version " + Fore.YELLOW + Pversion +" - Pre-Release\n" + Fore.WHITE + "  Last Version " + Fore.YELLOW + vers + Fore.WHITE + "\n  Try python LazySource" + Fore.YELLOW + " -h" + Fore.WHITE + "\n  Made By " + Fore.BLUE + "Vaxure" + Fore.WHITE + Fore.YELLOW + "\n  Donate here: www.paypal.me/Vaxure" + Fore.WHITE + Fore.CYAN + "\n  " + message.decode('ascii') + Fore.WHITE + "\n  <---------------------->\n")
 print(" 1) Sqlmap          2) JSql")
 print(" 3) BBQSQL          4) Nmap")
 print(" 5) Uniscan         6) Amap")
