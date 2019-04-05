@@ -1,4 +1,4 @@
-setuptools==40.8.0
+setuptools==41.0.0
 urllib3==1.24.1
 colorama==0.4.1
 pathlib==1.0.1
